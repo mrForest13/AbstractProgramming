@@ -2,6 +2,6 @@ package zadanieczwarte;
 
 public interface Executeable<T> {
 
-	public Integer execute(Integer x);
+	public T execute(T x);
 
 }

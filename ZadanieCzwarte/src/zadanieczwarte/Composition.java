@@ -35,9 +35,9 @@ public class Composition<T> implements Executeable<T>, Iterable<Executeable<T>> 
 	}
 
 	@Override
-	public Integer execute(Integer x) {
+	public T execute(T x) {
 
-		Integer wynik = x.intValue();
+		T wynik = x;
 
 		for (Executeable<T> e : executeableList)
 			wynik = e.execute(wynik);
